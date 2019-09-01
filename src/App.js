@@ -12,6 +12,11 @@ const app = (props) => {
     otherState: 'some other value'
   });
 
+  //setPersonState will not copy 'otherState'!!!
+  const [otherState, setOtherState] = useState('some other value');
+
+  console.log(personsState, otherState);
+
   const switchNameHandler = () => {
     setPersonsState({
       persons: [
