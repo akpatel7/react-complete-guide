@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Person from './Person/Person';
 
@@ -10,7 +10,7 @@ class App extends Component {
       { name: 'Stephanie', age: 26 }
     ],
     otherState: 'some other value'
-  }
+  };
 
   switchNameHandler = () => {
     // console.log('Was Clicked');
@@ -23,8 +23,7 @@ class App extends Component {
         { name: 'Stephanie', age: 27 }
       ]
     })
-  }
-
+  };
 
   render() {
     return (
